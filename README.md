@@ -18,9 +18,9 @@
 Разработка данного тестового задания была выполнена с использованием
 технологии Angular и Node.js.
 - Node.js
--- express
--- express-session
+- express
+- express-session
 - Angular
--- axios
--- @angular/router
--- @angular/forms
+- axios
+- @angular/router
+- @angular/forms
