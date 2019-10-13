@@ -12,3 +12,15 @@
 ## 1. npm install
 ## 2. ng build
 ## 3. cd server | node server.js
+## 4. В строке браузера - http://localhost:80/
+
+### Описание разработки
+Разработка данного тестового задания была выполнена с использованием
+технологии Angular и Node.js.
+- Node.js
+-- express
+-- express-session
+- Angular
+-- axios
+-- @angular/router
+-- @angular/forms
