@@ -9,9 +9,12 @@
 Якщо будуть якісь питання звертайтесь до наших спеціалістів.
 
 ### Запуск проекта
-## 1. ###'npm install'
-## 2. ###'ng build'
-## 3. ###'cd server | node server.js'
+## 1.
+### 'npm install'
+## 2.
+### 'ng build'
+## 3.
+### 'cd server | node server.js'
 ## 4. В строке браузера - http://localhost:80/
 
 ### Описание разработки
