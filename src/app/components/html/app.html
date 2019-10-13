@@ -1,0 +1,8 @@
+<div>
+    <div class="menu">
+      <a href="/"><div class="button left"><fa-icon [icon]="faHome"></fa-icon> MAIN</div></a>
+      <a *ngIf="!session" href="/login"><div class="button right">LOGIN</div></a>
+      <a *ngIf="session" href="http://localhost:80/get/logout"><div class="button right">EXIT</div></a>
+    </div>
+    <router-outlet></router-outlet>
+</div>

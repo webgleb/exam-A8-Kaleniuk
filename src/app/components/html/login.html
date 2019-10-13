@@ -1,0 +1,14 @@
+<div>
+    <form [formGroup]="checkoutForm" class="loginForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+      <div class="title">SignIn</div>
+      <div class="loginBlock">
+        <input type="text" name="login" formControlName="login" placeholder="login"/>
+      </div>
+      <div class="loginBlock">
+        <input type="password" name="password" formControlName="password" placeholder="password"/>
+      </div>
+      <div class="loginBlock">
+        <input type="submit" name="submit" placeholder="submit" value="submit"/>
+      </div>
+    </form>
+</div>

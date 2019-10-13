@@ -1,0 +1,52 @@
+<div>
+    <div class="data">
+        <div class="title">
+          table data
+        </div>
+        <div class="content">
+          <div *ngIf="modal" class="modal">
+            <div class="modal_content">
+              <div class="modal_close" (click)="closeModal()">Close</div>
+              <div class="modal_title">add new element</div>
+              <div class="modal_data">
+                <form [formGroup]="addForm" class="addForm" (ngSubmit)="onSubmit(addForm.value)">
+                  <div class="addBlock">
+                    <input type="text" name="name" formControlName="name" placeholder="Name"/>
+                  </div>
+                  <div class="addBlock">
+                    <input type="text" name="text" formControlName="text" placeholder="text"/>
+                  </div>
+                  <div class="addBlock">
+                    <input type="submit" name="submit" placeholder="submit" value="submit"/>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>ID</th>
+                        <th *ngIf="session">...</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of items" id="line_{{item.id}}">
+                        <td>{{item.name}}</td>
+                        <td>{{item.text}}</td>
+                        <td style="text-align: center">{{item.id}}</td>
+                        <td *ngIf="session" class="isMenu" style="text-align: center">
+                          <fa-icon [icon]="faBars"></fa-icon>
+                          <div class="mini_menu">
+                            <div class="mini_menu_btn" (click)="remove(item.id)" id={{item.id}}>Remvoe</div>
+                          </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div *ngIf="session" class="addButton" (click)="closeModal()">add new component</div>
+        </div>
+    </div>
+</div>
